@@ -270,7 +270,7 @@ async def epf_g_sheet_character_import(df):
     for i in range(3, 6):
         "`"
 
-        df.b[i] = int(str(df.d[i]).strip("`"))
+        df.b[i] = int(str(df.b[i]).strip("`"))
         df.d[i] = int(str(df.d[i]).strip("`"))
 
     # print(df)
